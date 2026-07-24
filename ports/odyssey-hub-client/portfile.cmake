@@ -25,7 +25,7 @@ else()
 endif()
 
 vcpkg_download_distfile(ARCHIVE
-    URLS "https://github.com/odysseyarm/odyssey-desktop/releases/download/odyssey-hub-client-ffi-v${VERSION}/ffi-${VCPKG_TARGET_TRIPLET}.zip"
+    URLS "https://github.com/odysseyarm/odyssey-desktop/releases/download/odyssey-hub-client-ffi-v${VERSION}/odyssey-hub-client-${VCPKG_TARGET_TRIPLET}.zip"
     FILENAME "odyssey-hub-client-${VERSION}-${VCPKG_TARGET_TRIPLET}.zip"
     SHA512 ${OHC_SHA512}
 )
