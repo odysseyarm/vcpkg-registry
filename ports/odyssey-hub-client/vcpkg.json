@@ -4,5 +4,9 @@
   "description": "C/C++ FFI bindings for the Odyssey Hub client library.",
   "homepage": "https://github.com/odysseyarm/odyssey-desktop",
   "license": "MIT",
-  "supports": "windows | linux | osx"
+  "supports": "windows | linux | osx",
+  "dependencies": [
+    "vcpkg-cmake",
+    "vcpkg-cmake-config"
+  ]
 }
