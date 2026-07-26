@@ -32,3 +32,9 @@ vcpkg_install_copyright(FILE_LIST "${SOURCE_PATH}/LICENSE")
 # the same prebuilt headers regardless of config — drop the duplicate to
 # match vcpkg's own header-dedup convention.
 file(REMOVE_RECURSE "${CURRENT_PACKAGES_DIR}/debug/include")
+
+# vcpkg_cmake_config_fixup only deletes known cmake-config filename patterns
+# from the debug share copy — our extra DeclareOhcTarget.cmake sibling file
+# doesn't match any of them, so it's left behind and trips vcpkg's
+# debug/share policy check.
+file(REMOVE_RECURSE "${CURRENT_PACKAGES_DIR}/debug/share")
