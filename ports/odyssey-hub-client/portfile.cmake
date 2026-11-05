@@ -1,6 +1,6 @@
 # odyssey-hub-client ships prebuilt binaries only (no source build) — native
 # libs for every platform/linkage are cross-compiled in
-# odysseyarm/odyssey-desktop's CI and bundled into one
+# odysseyarm/odyssey's CI and bundled into one
 # odyssey-hub-client-ffi-vX.Y.Z GitHub Release zip, which also contains the
 # CMakeLists.txt that vcpkg_cmake_configure/install below actually runs.
 #
@@ -9,7 +9,7 @@
 # CMakeLists.txt looks them up via find_package(PkgConfig).
 
 vcpkg_download_distfile(ARCHIVE
-    URLS "https://github.com/odysseyarm/odyssey-desktop/releases/download/odyssey-hub-client-ffi-v${VERSION}/odyssey-hub-client.zip"
+    URLS "https://github.com/odysseyarm/odyssey/releases/download/odyssey-hub-client-ffi-v${VERSION}/odyssey-hub-client.zip"
     FILENAME "odyssey-hub-client-${VERSION}.zip"
     SHA512 ddec31f3de3787dcf0a38a46401de410ad462ec1a4b747b0469d251da6cfa2b97d0197f80940e1977e32ba9f5aacaefc1421786404bba429a722055c91a06521
 )

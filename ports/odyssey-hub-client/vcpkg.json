@@ -1,8 +1,9 @@
 {
   "name": "odyssey-hub-client",
   "version": "0.1.1",
+  "port-version": 1,
   "description": "C/C++ FFI bindings for the Odyssey Hub client library.",
-  "homepage": "https://github.com/odysseyarm/odyssey-desktop",
+  "homepage": "https://github.com/odysseyarm/odyssey",
   "license": "MIT",
   "supports": "windows | linux | osx",
   "dependencies": [
