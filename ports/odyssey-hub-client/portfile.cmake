@@ -11,7 +11,7 @@
 vcpkg_download_distfile(ARCHIVE
     URLS "https://github.com/odysseyarm/odyssey-desktop/releases/download/odyssey-hub-client-ffi-v${VERSION}/odyssey-hub-client.zip"
     FILENAME "odyssey-hub-client-${VERSION}.zip"
-    SHA512 367ebf12d66e6948f7d41ed279aab71ed934eee290099c6bb911e3f2a95f261a5468ec281a9a2ab81ac152b15fbe7af543b20b84b9174bd4d319a8f29b1e991b
+    SHA512 ddec31f3de3787dcf0a38a46401de410ad462ec1a4b747b0469d251da6cfa2b97d0197f80940e1977e32ba9f5aacaefc1421786404bba429a722055c91a06521
 )
 
 vcpkg_extract_source_archive(SOURCE_PATH
